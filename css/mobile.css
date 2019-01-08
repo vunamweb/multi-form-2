@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+	
+}
+
+@media (max-width: 812px) {
+	
+}
+
+@media (max-width: 800px) {
+	
+}
+
+@media (max-width: 768px) {
+
+  .left{float:none;text-align: center;margin-top: 20px;}
+  
+}
+
+@media (max-width: 736px) {
+
+}
+
+@media (max-width: 667px) {
+	
+}
+
+@media (max-width: 414px) {
+
+}
+
+@media (max-width: 375px) {
+	
+}
+
+
+@supports (-webkit-overflow-scrolling: touch) {
+    
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* CSS for other than iOS devices */ 
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	
+}
