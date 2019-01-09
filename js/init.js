@@ -12,6 +12,8 @@ var row;
 var countTab = 5;
 var countSelected = 6;
 var width = $(window).width();
+var currentPage = 0;
+var previousPage = 0;
 //var email = $.cookie('email');
 //var name = $.cookie('name');
 //var vorname = $.cookie('vorname');
@@ -190,18 +192,24 @@ $("document").ready(function(){
 	})
 	
 	$(".left").click(function(){
-        var page=parseInt($(this).attr('page'));
-        $('.left').each(function(e){
+        
+		$('.page'+currentPage+' .left').each(function(e){
         	$(this).find('.check').hide();
             $(this).css('border','1px solid #ccc');  		
         })
-        $(this).find('.check').show();
+        
+		$(this).find('.check').show();
         $(this).css('border','1px solid red');
-        setTimeout(function(){ $( '.slider-pro' ).sliderPro( 'gotoSlide',page); }, 800);
+        
+		previousPage = currentPage;
+		currentPage = parseInt($(this).attr('page'));
+        
+		setTimeout(function(){ $( '.slider-pro' ).sliderPro( 'gotoSlide',currentPage); }, 800);
 	})
     
     $(".back").click(function(){
-        setTimeout(function(){ $( '.slider-pro' ).sliderPro( 'previousSlide'); }, 800);
+        currentPage = previousPage;
+		setTimeout(function(){ $( '.slider-pro' ).sliderPro( 'previousSlide'); }, 800);
     })
     
     
