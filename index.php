@@ -135,41 +135,7 @@
               <!-- page 2 -->
     			<div class="sp-slide page2">
     			  <section class="section_welcome" part="1">
-          			<div class="container">
-          				<div class="row">
-          					<div class="col col-12">
-          						<h2 class="headline">Für welchen Gebäudetyp benötigen Sie eine neue Heizung?</h2>
-          						<div class="left" part="1">
-                                    <img class="img" src="images/einzelhaus.png" />
-                                    <p class="text">Einzelhaus</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" part="1">
-                                    <img class="img" src="images/doppelhaushaalfte.png" />
-                                    <p class="text">Doppelhaushälfte</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" part="1">
-                                    <img class="img" src="images/mehrfamilienhaus.png" />
-                                    <p class="text">Mehrfamilienhaus</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" part="1">
-                                    <img class="img" src="images/wohnung-mit-eigener-heizung.png" />
-                                    <p class="text">Wohnung mit eigener Heizung</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                            </div>
-          				</div>
-          			</div>
+          			<?php require 'sie_eine_neue_heizung.php'; ?>
           		</section>
                 <section class="section_welcome" part="2">
           			<div class="container">
@@ -177,21 +143,21 @@
           					<div class="col col-12">
           						<h2 class="headline">Liegt in Ihrem Haus eine komplette Heizungsverrohrung vor?</h2>
           						<div class="left" part="2">
-                                    <img class="img" src="images/ja.png" />
+                                    <img class="img" src="images/ja2.png" />
                                     <p class="text">Ja</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
                                 <div class="left" part="2">
-                                    <img class="img" src="images/nein.png" />
+                                    <img class="img" src="images/nein2.png" />
                                     <p class="text">Nein</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
                                 <div class="left" part="2">
-                                    <img class="img" src="images/nochnichts.png" />
+                                    <img class="img" src="images/unsicher.png" />
                                     <p class="text">Unsicher</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
@@ -206,161 +172,169 @@
 
               <!-- page 3 -->
     			<div class="sp-slide page3">
-    			  <section class="section_welcome">
-          			<div class="container">
-          				<div class="row">
-          					<div class="col col-12">
-          						<h2 class="headline">Wann wurde Ihre Immobilie gebaut?</h2>
-          						<div class="left" page="4">
-                                    <img class="img" src="images/1960.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="2">
-                                    <img class="img" src="images/1961.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="2">
-                                    <img class="img" src="images/1978.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="">
-                                    <img class="img" src="images/1995.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-								<div class="left" page="">
-                                    <img class="img" src="images/2002.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-								<div class="left" page="">
-                                    <img class="img" src="images/noch-im-bau.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                            </div>
-          				</div>
-          			</div>
-          		</section>
+    			  <section class="section_welcome" part="1">
+          			<?php require 'bit_year.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'sie_eine_neue_heizung.php'; ?>
+          		  </section>
+				
     			</div>
     		  <!-- end page 3 -->
 
               <!-- page 4 -->
-    			<div class="sp-slide page2">
-    			  <section class="section_welcome">
-          			<div class="container">
-          				<div class="row">
-          					<div class="col col-12">
-          						<h2 class="headline">Wie groß ist die zu beheizende Wohnfläche?</h2>
-          						<div class="left" page="5">
-                                    <p class="text"> 0 bis 50 qm</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="2">
-                                    <p class="text">51 bis 100 qm</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="2">
-                                    <p class="text">101 bis 150 qm</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="">
-                                    <p class="text">151 bis 200 qm</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-								<div class="left" page="">
-                                    <p class="text"> 201 bis 399 qm</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-								<div class="left" page="">
-                                    <p class="text">400 qm oder mehr</p>
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                            </div>
-          				</div>
-          			</div>
+    			<div class="sp-slide page4">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'bit_qm.php'; ?>
+          		</section>
+				<section class="section_welcome" part="2">
+          			<?php require 'bit_year.php'; ?>
           		</section>
     			</div>
     		  <!-- end page 4 -->
 
               <!-- page 5 -->
-    			<div class="sp-slide page3">
-    			  <section class="section_welcome">
-          			<div class="container">
-          				<div class="row">
-          					<div class="col col-12">
-          						<h2 class="headline">Wie viele Personen leben im Haushalt?</h2>
-          						<div class="left" page="6">
-                                    <img class="img" src="images/1bis.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="2">
-                                    <img class="img" src="images/3bis.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="2">
-                                    <img class="img" src="images/5bis.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                                <div class="left" page="">
-                                    <img class="img" src="images/7bis.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-								<div class="left" page="">
-                                    <img class="img" src="images/8bis.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-								<div class="left" page="">
-                                    <img class="img" src="images/noch-im-bau.png" />
-                                    <div class="check">
-                                      <img src="images/check_icon.png" />
-                                    </div>
-                                </div>
-                            </div>
-          				</div>
-          			</div>
-          		</section>
+    			<div class="sp-slide page5">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'bit_number.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'bit_qm.php'; ?>
+          		  </section>
     			</div>
-    		  <!-- end page 5 -->			  
+    		  <!-- end page 5 -->
+
+              <!-- page 6 -->
+    			<div class="sp-slide page6">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'wird_trinkwasser_mit.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'bit_number.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 6 -->	
+
+              <!-- page 7 -->
+    			<div class="sp-slide page7">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'wie_werden.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'wird_trinkwasser_mit.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 7 -->	
+
+              <!-- page 8 -->
+    			<div class="sp-slide page8">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'wann_soll_die_neue.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'wie_werden.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 8 -->	
+
+              <!-- page 9 -->
+    			<div class="sp-slide page9">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'last.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'wann_soll_die_neue.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 9 -->	
+
+              <!-- page 10 -->
+    			<div class="sp-slide page10">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'anmerkungen_zur_heizung.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'haben_sie_probleme.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 10 -->
+
+              <!-- page 11 -->
+    			<div class="sp-slide page11">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'postleitzahl.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'last.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="3">
+          			<?php require 'um_welches_problem.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 11 -->	
+
+              <!-- page 12 -->
+    			<div class="sp-slide page12">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'angaben_zur_person.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'anmerkungen_zur_heizung.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="3">
+          			<?php require 'last.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 12 -->	
+
+              <!-- page 13 -->
+    			<div class="sp-slide page13">
+    			  <section class="section_welcome" part="1">
+          			<?php require 'success.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="2">
+          			<?php require 'postleitzahl.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="3">
+          			<?php require 'anmerkungen_zur_heizung.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 13 -->
+
+             <!-- page 14 -->
+    			<div class="sp-slide page14">
+    			  <section class="section_welcome" part="2">
+          			<?php require 'angaben_zur_person.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="3">
+          			<?php require 'postleitzahl.php'; ?>
+          		  </section>
+    			</div>
+    		  <!-- end page 14 -->	
+
+             <!-- page 15 -->
+    			<div class="sp-slide page15">
+    			  <section class="section_welcome" part="2">
+          			<?php require 'success.php'; ?>
+          		  </section>
+				  <section class="section_welcome" part="3">
+          			<?php require 'angaben_zur_person.php'; ?>
+          		  </section>
+    			</div>
+    		<!-- end page 15 -->	
+
+            <!-- page 16 -->
+    			<div class="sp-slide page16">
+    			  <section class="section_welcome" part="3">
+          			<?php require 'success.php'; ?>
+          		  </section>
+    			</div>
+    		<!-- end page 16 -->			
 			</div>
 		  </div>
           <a id="back" href="javascript:void(0)"><img src="images/back-icon.png" /></a>
 		</main>
 	</div>
-    <div id="layer">    
-      <a class="layer_close" href="javascript:void(0)"><img src="images/1x/i_close.png" alt=""></a>
-    </div> 
     <?php require 'js-footer.php'; ?>
     
 </body>

@@ -12,7 +12,8 @@
 
 @media (max-width: 768px) {
 
-  .left{float:none;text-align: center;margin-top: 20px;}
+  .left{float:none;text-align: center;margin-top: 20px;width:90%}
+  .headline{font-size:18px;text-align:center}
   
 }
 

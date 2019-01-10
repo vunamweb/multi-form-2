@@ -120,7 +120,7 @@ function showFirstRowOnMobile()
 
 function setHeightFromPage(page)
 {
-    var height = $('.'+page+' .section_welcome').height()+80;
+    var height = $('.page'+page+'').height()+200;
     //$('.sp-grab').css('height',''+height+'px !important');
     $('.sp-mask').attr('style','height:'+height+'px');
 }
@@ -153,13 +153,33 @@ function initSlider()
         //$( '.slider-pro' ).sliderPro( 'gotoSlide',5);
 }
 
+function nextSlider(currentPage,partClick)
+{
+       $('.page'+currentPage+' section').each(function(e){
+        	var part = $(this).attr('part');
+            if(partClick != part)
+              $(this).hide(); 
+            else
+              $(this).show();  		
+        })
+        
+        setTimeout(function(){
+            $( '.slider-pro' ).sliderPro( 'nextSlide' );
+            
+            if($('#back').css('display')=='none')
+              $('#back').show();
+
+            setHeightFromPage(currentPage); 		  
+            }, 800);
+}
+
 $("document").ready(function(){
     initData();
     initSlider();
     //setTimeout(function(){ initSlider(); }, 3000);
     if($(window).width()<=768)
       showFirstRowOnMobile();
-    setHeightFromPage('page0');
+    setHeightFromPage(0);
     
     $(".page-question input[type='radio']").click(function(){
         //var content = $(this).parent().parent().parent().parent().find('.conten-tab-text').html();
@@ -192,7 +212,7 @@ $("document").ready(function(){
 	
 	$(".left").click(function(){
         
-		var partClick = $(this).attr('part');
+		var partClick = ($(this).attr('part')==undefined)?$(this).parent().parent().parent().parent().attr('part'):$(this).attr('part');
         
         $('.page'+currentPage+' .left').each(function(e){
         	$(this).find('.check').hide();
@@ -204,21 +224,7 @@ $("document").ready(function(){
         
 		currentPage++;
         
-        $('.page'+currentPage+' section').each(function(e){
-        	var part = $(this).attr('part');
-            if(partClick != part)
-              $(this).hide(); 
-            else
-              $(this).show();  		
-        })
-        
-        setTimeout(function(){
-            $( '.slider-pro' ).sliderPro( 'nextSlide' );
-            
-            if($('#back').css('display')=='none')
-              $('#back').show(); 
-            
-            }, 800);
+        nextSlider(currentPage,partClick);
 	})
     
     $("#back").click(function(){
@@ -229,6 +235,15 @@ $("document").ready(function(){
          $('#back').hide();
         
 		setTimeout(function(){ $( '.slider-pro' ).sliderPro( 'previousSlide'); }, 800);
+    })
+	
+	$(".next").click(function(){
+        
+        var partClick = ($(this).attr('part')==undefined)?$(this).parent().parent().parent().parent().parent().attr('part'):$(this).attr('part');
+        
+        currentPage++;
+		
+		nextSlider(currentPage,partClick);
     })
     
     

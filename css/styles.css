@@ -36,6 +36,7 @@ p {margin-bottom: 10px;}
   font-size: 30px;
   color: #004181;
   margin-bottom: 5px;
+  text-align:center;
 }
 .sub_headline {
   font-size: 24px;
@@ -61,7 +62,26 @@ header {
     cursor: pointer;
     position: relative;
 	text-align: center;
+	min-height: 190px;
+	margin-top :20px;
+	width:200px;
 }
+
+.next
+ {
+	padding: .6rem 1.4rem;
+    background-color: #f23400;
+    color: #fff;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.height .left{min-height:200px}
+
+.radio .left{width:90%}
+
 
 .check{position: absolute;top:5px;right:5px;display: none;}
 .check img{width: 20px;}
