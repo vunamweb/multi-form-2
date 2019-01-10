@@ -13,7 +13,6 @@ var countTab = 5;
 var countSelected = 6;
 var width = $(window).width();
 var currentPage = 0;
-var previousPage = 0;
 //var email = $.cookie('email');
 //var name = $.cookie('name');
 //var vorname = $.cookie('vorname');
@@ -193,7 +192,9 @@ $("document").ready(function(){
 	
 	$(".left").click(function(){
         
-		$('.page'+currentPage+' .left').each(function(e){
+		var partClick = $(this).attr('part');
+        
+        $('.page'+currentPage+' .left').each(function(e){
         	$(this).find('.check').hide();
             $(this).css('border','1px solid #ccc');  		
         })
@@ -201,14 +202,32 @@ $("document").ready(function(){
 		$(this).find('.check').show();
         $(this).css('border','1px solid red');
         
-		previousPage = currentPage;
-		currentPage = parseInt($(this).attr('page'));
+		currentPage++;
         
-		setTimeout(function(){ $( '.slider-pro' ).sliderPro( 'gotoSlide',currentPage); }, 800);
+        $('.page'+currentPage+' section').each(function(e){
+        	var part = $(this).attr('part');
+            if(partClick != part)
+              $(this).hide(); 
+            else
+              $(this).show();  		
+        })
+        
+        setTimeout(function(){
+            $( '.slider-pro' ).sliderPro( 'nextSlide' );
+            
+            if($('#back').css('display')=='none')
+              $('#back').show(); 
+            
+            }, 800);
 	})
     
-    $(".back").click(function(){
-        currentPage = previousPage;
+    $("#back").click(function(){
+        
+        currentPage--;
+        
+        if(currentPage==0)
+         $('#back').hide();
+        
 		setTimeout(function(){ $( '.slider-pro' ).sliderPro( 'previousSlide'); }, 800);
     })
     

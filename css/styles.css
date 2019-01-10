@@ -66,8 +66,9 @@ header {
 .check{position: absolute;top:5px;right:5px;display: none;}
 .check img{width: 20px;}
 
-.back img{width: 30px;}
-.back{margin-top: 30px;display: block;}
+#back{display: none;}
+#back img{width: 30px;}
+#back{margin-top: 30px;}
 
 
 

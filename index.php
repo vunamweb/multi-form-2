@@ -48,28 +48,28 @@
           				<div class="row">
           					<div class="col col-12">
           						<h2 class="headline">Mit welchem Brennstoff möchten Sie in Zukunft heizen?</h2>
-          						<div class="left" page="1">
+          						<div class="left">
                                     <img class="img" src="images/erdgas.png" />
                                     <p class="text">Erdgas</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="1">
+                                <div class="left">
                                     <img class="img" src="images/flussiggas.png" />
                                     <p class="text">Flüssiggas</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="1">
+                                <div class="left">
                                     <img class="img" src="images/heizol.png" />
                                     <p class="text">Heizöl</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="1">
+                                <div class="left">
                                     <img class="img" src="images/unsicher.png" />
                                     <p class="text">Unsicher</p>
                                     <div class="check">
@@ -90,35 +90,35 @@
           				<div class="row">
           					<div class="col col-12">
           						<h2 class="headline">Mit welchem Brennstoff heizen Sie aktuell?</h2>
-          						<div class="left" page="2">
+          						<div class="left" part="1">
                                     <img class="img" src="images/erdgas.png" />
                                     <p class="text">Erdgas</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="2">
+                                <div class="left" part="1">
                                     <img class="img" src="images/flussiggas.png" />
                                     <p class="text">Flüssiggas</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="2">
+                                <div class="left" part="1">
                                     <img class="img" src="images/heizol.png" />
                                     <p class="text">Heizöl</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="">
+                                <div class="left" part="2">
                                     <img class="img" src="images/sonstiges.png" />
                                     <p class="text">Sonstiges</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="">
+                                <div class="left" part="2">
                                     <img class="img" src="images/nochnichts.png" />
                                     <p class="text">Noch nichts</p>
                                     <div class="check">
@@ -129,39 +129,38 @@
           				</div>
           			</div>
           		</section>
-    			<a class="back" href="javascript:void(0)"><img src="images/back-icon.png" /></a>
-                </div>
+    			</div>
     		  <!-- end page 1 -->
 
               <!-- page 2 -->
     			<div class="sp-slide page2">
-    			  <section class="section_welcome">
+    			  <section class="section_welcome" part="1">
           			<div class="container">
           				<div class="row">
           					<div class="col col-12">
           						<h2 class="headline">Für welchen Gebäudetyp benötigen Sie eine neue Heizung?</h2>
-          						<div class="left" page="3">
+          						<div class="left" part="1">
                                     <img class="img" src="images/einzelhaus.png" />
                                     <p class="text">Einzelhaus</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="2">
+                                <div class="left" part="1">
                                     <img class="img" src="images/doppelhaushaalfte.png" />
                                     <p class="text">Doppelhaushälfte</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="2">
+                                <div class="left" part="1">
                                     <img class="img" src="images/mehrfamilienhaus.png" />
                                     <p class="text">Mehrfamilienhaus</p>
                                     <div class="check">
                                       <img src="images/check_icon.png" />
                                     </div>
                                 </div>
-                                <div class="left" page="">
+                                <div class="left" part="1">
                                     <img class="img" src="images/wohnung-mit-eigener-heizung.png" />
                                     <p class="text">Wohnung mit eigener Heizung</p>
                                     <div class="check">
@@ -172,8 +171,37 @@
           				</div>
           			</div>
           		</section>
-    			<a class="back" href="javascript:void(0)"><img src="images/back-icon.png" /></a>
-                </div>
+                <section class="section_welcome" part="2">
+          			<div class="container">
+          				<div class="row">
+          					<div class="col col-12">
+          						<h2 class="headline">Liegt in Ihrem Haus eine komplette Heizungsverrohrung vor?</h2>
+          						<div class="left" part="2">
+                                    <img class="img" src="images/ja.png" />
+                                    <p class="text">Ja</p>
+                                    <div class="check">
+                                      <img src="images/check_icon.png" />
+                                    </div>
+                                </div>
+                                <div class="left" part="2">
+                                    <img class="img" src="images/nein.png" />
+                                    <p class="text">Nein</p>
+                                    <div class="check">
+                                      <img src="images/check_icon.png" />
+                                    </div>
+                                </div>
+                                <div class="left" part="2">
+                                    <img class="img" src="images/nochnichts.png" />
+                                    <p class="text">Unsicher</p>
+                                    <div class="check">
+                                      <img src="images/check_icon.png" />
+                                    </div>
+                                </div>
+                            </div>
+          				</div>
+          			</div>
+          		</section>
+    			</div>
     		  <!-- end page 2 -->	
 
               <!-- page 3 -->
@@ -223,8 +251,7 @@
           				</div>
           			</div>
           		</section>
-    			<a class="back" href="javascript:void(0)"><img src="images/back-icon.png" /></a>
-                </div>
+    			</div>
     		  <!-- end page 3 -->
 
               <!-- page 4 -->
@@ -274,8 +301,7 @@
           				</div>
           			</div>
           		</section>
-    			<a class="back" href="javascript:void(0)"><img src="images/back-icon.png" /></a>
-                </div>
+    			</div>
     		  <!-- end page 4 -->
 
               <!-- page 5 -->
@@ -325,11 +351,11 @@
           				</div>
           			</div>
           		</section>
-    			<a class="back" href="javascript:void(0)"><img src="images/back-icon.png" /></a>
-                </div>
+    			</div>
     		  <!-- end page 5 -->			  
 			</div>
 		  </div>
+          <a id="back" href="javascript:void(0)"><img src="images/back-icon.png" /></a>
 		</main>
 	</div>
     <div id="layer">    
