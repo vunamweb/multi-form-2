@@ -3,9 +3,11 @@
           					<div class="col col-12">
           						<h2 class="headline">Anmerkungen zur Heizung</h2>
           						<div class="text-center">
-                                    <textarea rows="10" cols="100" id="anmer"></textarea>
-									<br>
-									<input  type="button" class="next" value="Weiter"/>
+                                    <form action="#">
+										<textarea required="true" rows="10" cols="100" id="anmer"></textarea>
+										<br>
+										<input  type="submit" class="next amer" value="Weiter"/>
+									</form>
                                 </div>
                             </div>
           				</div>
